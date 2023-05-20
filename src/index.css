@@ -149,7 +149,9 @@ tbody tr:nth-child(even) {
   .top-main-body {
     width: 100%;
   }
-
+  .users-sections > p{
+    font-size: 13px;
+  }
   .users-sections > p{
     font-size: 13px;
   }
