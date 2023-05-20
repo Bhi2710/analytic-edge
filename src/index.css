@@ -1,0 +1,168 @@
+body {
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* __________Main Container__________ */
+
+.top-main-container {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-main-body {
+  width: 70%;
+}
+
+.main-container-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1rem 0px;
+  padding: 0px 5px;
+
+}
+
+.main-container-top button {
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: none;
+  background-color: #d5d1defe;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type=text] {
+  width: 200px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid;
+  outline: blue;
+  font-weight: bold;
+}
+
+/* _______Table-Container________ */
+
+.table-container {
+  background-color: white;
+  border-radius: 15px;
+  overflow: auto;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #000;
+  visibility: hidden;
+}
+
+.table-container:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+table,
+th,
+td {
+  padding: 1rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+}
+
+thead th {
+  background-color: #d5d1defe;
+  position: static;
+  top: 0;
+  left: 0;
+}
+
+tbody td:nth-child(4) button {
+  align-items: center;
+  padding: 8px 15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #d5d1defe;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #0000000b;
+}
+
+.pagination {
+  margin: 2rem 0px;
+}
+
+.pagination button {
+  padding: 5px 12px;
+  border: none;
+  background-color: #d5d1defe;
+  color: blue;
+  margin: 0px 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: blue !important;
+  color: #d5d1defe !important;
+}
+
+.back-button {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.back-button button {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.top-users-sections{
+  margin: 1rem 0px;
+}
+
+.users-sections{
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .top-main-body {
+    width: 100%;
+  }
+
+  .users-sections > p{
+    font-size: 13px;
+  }
+
+  .pagination {
+    text-align: center;
+  }
+  .pagination button {
+    padding: 3px 7px;
+    margin: 0 2px;
+  }
+
+  td:not(:first-of-type) {
+    min-width: 12rem;
+  }
+}
